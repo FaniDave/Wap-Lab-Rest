@@ -1,0 +1,35 @@
+GET http://localhost:3000/books
+
+###
+
+
+GET http://localhost:3000/books/Tarzan
+
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Rich Dad Poor Dad",
+    "ISBN": 321,
+    "publishedDate": "2015",
+    "author": "Robert Kiyosaki"
+}
+
+
+### 
+
+PUT http://localhost:3000/books/789
+Content-Type: application/json
+
+{
+    "title": "To Kill a Mockingbird",
+    "publishedDate": "1961",
+    "author": "Harper Lee"
+}
+
+### 
+
+DELETE http://localhost:3000/books/2000
